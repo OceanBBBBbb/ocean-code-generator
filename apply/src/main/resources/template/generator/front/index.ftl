@@ -41,11 +41,10 @@
           </#if>
           </#list>
       </#if>
-      <el-table-column v-if="checkPermission(['ADMIN','${upperCaseClassName}_ALL','${upperCaseClassName}_EDIT','${upperCaseClassName}_DELETE'])" label="操作" width="150px" align="center">
+      <el-table-column label="操作" width="150px" align="center">
         <template slot-scope="scope">
-          <el-button v-permission="['ADMIN','${upperCaseClassName}_ALL','${upperCaseClassName}_EDIT']" size="mini" type="primary" icon="el-icon-edit" @click="edit(scope.row)"/>
+          <el-button size="mini" type="primary" icon="el-icon-edit" @click="edit(scope.row)"/>
           <el-popover
-            v-permission="['ADMIN','${upperCaseClassName}_ALL','${upperCaseClassName}_DELETE']"
             :ref="scope.row.${pkChangeColName}"
             placement="top"
             width="180">
@@ -71,7 +70,6 @@
 </template>
 
 <script>
-import checkPermission from '@/utils/permission'
 import initData from '@/mixins/initData'
 import { del } from '@/api/${changeClassName}'
 <#if hasTimestamp>
@@ -107,7 +105,6 @@ export default {
   <#if hasTimestamp>
     parseTime,
   </#if>
-    checkPermission,
     beforeInit() {
       this.url = 'api/${changeClassName}'
       const sort = '${pkChangeColName},desc'

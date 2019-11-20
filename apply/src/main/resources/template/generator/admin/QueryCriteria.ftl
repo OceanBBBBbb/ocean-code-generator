@@ -8,7 +8,7 @@ import java.sql.Timestamp;
 import java.math.BigDecimal;
 </#if>
 <#if queryColumns??>
-import com.cbi.payadmin.annotation.Query;
+import com.ocean.common.annotation.Query;
 </#if>
 
 /**

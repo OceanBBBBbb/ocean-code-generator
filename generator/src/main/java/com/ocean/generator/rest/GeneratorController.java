@@ -53,7 +53,7 @@ public class GeneratorController {
      * @return
      */
     @GetMapping(value = "/generator/columns")
-    public ResponseEntity getTables(@RequestParam String tableName){
+    public ResponseEntity getTableColumns(@RequestParam String tableName){
         return new ResponseEntity(generatorService.getColumns(tableName), HttpStatus.OK);
     }
 

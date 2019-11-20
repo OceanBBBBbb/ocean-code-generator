@@ -1,6 +1,6 @@
 package ${package}.service.mapper;
 
-import com.cbi.payadmin.mapper.EntityMapper;
+import com.ocean.common.mapper.EntityMapper;
 import ${package}.domain.${className};
 import ${package}.service.dto.${className}DTO;
 import org.mapstruct.Mapper;

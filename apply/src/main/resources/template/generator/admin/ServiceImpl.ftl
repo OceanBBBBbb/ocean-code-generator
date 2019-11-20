@@ -5,12 +5,12 @@ import ${package}.domain.${className};
     <#list columns as column>
         <#if column.columnKey = 'UNI'>
             <#if column_index = 1>
-import com.cbi.payadmin.exception.EntityExistException;
+import com.ocean.common.exception.EntityExistException;
             </#if>
         </#if>
     </#list>
 </#if>
-import com.cbi.payadmin.utils.ValidationUtil;
+import com.ocean.common.utils.ValidationUtil;
 import ${package}.repository.${className}Repository;
 import ${package}.service.${className}Service;
 import ${package}.service.dto.${className}DTO;
@@ -30,8 +30,8 @@ import cn.hutool.core.util.IdUtil;
 </#if>
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import com.cbi.payadmin.utils.PageUtil;
-import com.cbi.payadmin.utils.QueryHelp;
+import com.ocean.common.utils.PageUtil;
+import com.ocean.common.utils.QueryHelp;
 
 /**
 * @author ${author}
