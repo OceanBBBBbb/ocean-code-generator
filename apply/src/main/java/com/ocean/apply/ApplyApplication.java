@@ -14,8 +14,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableTransactionManagement
 @EnableSwagger2
 @ComponentScan({"com.ocean.generator","com.ocean.apply"})
-@EnableJpaRepositories(basePackages = { "com.ocean.generator.repository"})
-@EntityScan(basePackages = { "com.ocean.generator.domain" })
+@EnableJpaRepositories(basePackages = { "com.ocean.generator.repository","com.ocean.apply"})
+@EntityScan(basePackages = { "com.ocean.generator.domain","com.ocean.apply"})
 public class ApplyApplication {
 
     public static void main(String[] args) {
