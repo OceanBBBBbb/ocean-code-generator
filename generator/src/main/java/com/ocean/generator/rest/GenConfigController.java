@@ -2,6 +2,7 @@ package com.ocean.generator.rest;
 
 import com.ocean.generator.domain.GenConfig;
 import com.ocean.generator.service.GenConfigService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,11 +14,15 @@ import org.springframework.web.bind.annotation.*;
  * @date 2019-01-14
  */
 @RestController
-@RequestMapping("api")
+@RequestMapping("/api")
+@Api("生成器配置接口")
 public class GenConfigController {
 
-    @Autowired
-    private GenConfigService genConfigService;
+    private final GenConfigService genConfigService;
+
+    public GenConfigController(GenConfigService genConfigService) {
+        this.genConfigService = genConfigService;
+    }
 
     /**
      * 查询生成器配置

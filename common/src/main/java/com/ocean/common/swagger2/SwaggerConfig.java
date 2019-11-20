@@ -27,8 +27,6 @@ import java.util.List;
 @EnableSwagger2
 public class SwaggerConfig {
 
-    @Value("${jwt.header}")
-    private String tokenHeader;
 
     @Value("${swagger.enabled}")
     private Boolean enabled;
@@ -37,7 +35,7 @@ public class SwaggerConfig {
     public Docket createRestApi() {
         ParameterBuilder ticketPar = new ParameterBuilder();
         List<Parameter> pars = new ArrayList<Parameter>();
-        ticketPar.name(tokenHeader).description("token")
+        ticketPar//.name(tokenHeader).description("token")
                 .modelRef(new ModelRef("string"))
                 .parameterType("header")
                 .defaultValue("Bearer ")
@@ -55,8 +53,8 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("payadmin 接口文档")
-                .version("2.1")
+                .title("ocean-code-generator接口文档")
+                .version("1.0.0")
                 .build();
     }
 

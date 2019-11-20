@@ -17,7 +17,7 @@
         <module>generator</module>
     </modules>
     <name>ocean-code-generator</name>
-    <description>Demo project for Spring Boot</description>
+    <description>ocean-code-generator project for Spring Boot</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -47,10 +47,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
         <!-- spring cache -->
         <dependency>

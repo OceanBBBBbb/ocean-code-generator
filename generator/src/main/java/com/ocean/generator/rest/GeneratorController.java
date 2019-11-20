@@ -5,6 +5,7 @@ import com.ocean.common.exception.BadRequestException;
 import com.ocean.generator.domain.vo.ColumnInfo;
 import com.ocean.generator.service.GenConfigService;
 import com.ocean.generator.service.GeneratorService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -18,7 +19,8 @@ import java.util.List;
  * @date 2019-11-20
  */
 @RestController
-@RequestMapping("api")
+@RequestMapping("/api")
+@Api("生成代码相关接口")
 public class GeneratorController {
 
     @Autowired

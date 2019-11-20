@@ -18,6 +18,7 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
 
     private static final char SEPARATOR = '_';
     private static final String CHARSET_NAME = "UTF-8";
+    public static final String REGION = "内网IP|内网IP";
 
     /**
      * 是否包含字符串
@@ -176,7 +177,7 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
             if(address.charAt(address.length()-1) == '|'){
                 address = address.substring(0,address.length() - 1);
             }
-            return address.equals(ElAdminConstant.REGION)?"内网IP":address;
+            return address.equals(REGION)?"内网IP":address;
         } catch (Exception e) {
             e.printStackTrace();
         }

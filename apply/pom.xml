@@ -12,9 +12,9 @@
 
     <artifactId>apply</artifactId>
 
-    <properties>
-        <jjwt.version>0.9.1</jjwt.version>
-    </properties>
+<!--    <properties>-->
+<!--        <jjwt.version>0.9.1</jjwt.version>-->
+<!--    </properties>-->
 
     <dependencies>
         <dependency>
@@ -23,24 +23,24 @@
             <version>0.0.1-SNAPSHOT</version>
             <exclusions>
                 <exclusion>
-                    <groupId>com.cbi</groupId>
-                    <artifactId>payadmin-common</artifactId>
+                    <groupId>com.ocean</groupId>
+                    <artifactId>common</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
 
         <!--jwt-->
-        <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-            <version>${jjwt.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.jsonwebtoken</groupId>-->
+<!--            <artifactId>jjwt</artifactId>-->
+<!--            <version>${jjwt.version}</version>-->
+<!--        </dependency>-->
 
         <!-- quartz -->
-        <dependency>
-            <groupId>org.quartz-scheduler</groupId>
-            <artifactId>quartz</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.quartz-scheduler</groupId>-->
+<!--            <artifactId>quartz</artifactId>-->
+<!--        </dependency>-->
 
     </dependencies>
 
