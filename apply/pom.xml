@@ -8,40 +8,15 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-<!--    <packaging>pom</packaging>-->
     <modelVersion>4.0.0</modelVersion>
     <artifactId>apply</artifactId>
-
-<!--    <properties>-->
-<!--        <jjwt.version>0.9.1</jjwt.version>-->
-<!--    </properties>-->
 
     <dependencies>
         <dependency>
             <groupId>com.ocean</groupId>
             <artifactId>generator</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.ocean</groupId>
-                    <artifactId>common</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
-
-        <!--jwt-->
-<!--        <dependency>-->
-<!--            <groupId>io.jsonwebtoken</groupId>-->
-<!--            <artifactId>jjwt</artifactId>-->
-<!--            <version>${jjwt.version}</version>-->
-<!--        </dependency>-->
-
-        <!-- quartz -->
-<!--        <dependency>-->
-<!--            <groupId>org.quartz-scheduler</groupId>-->
-<!--            <artifactId>quartz</artifactId>-->
-<!--        </dependency>-->
-
     </dependencies>
 
     <build>
