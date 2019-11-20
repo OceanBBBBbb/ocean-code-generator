@@ -1,0 +1,1038 @@
+11:48:33.440 [main] INFO  com.ocean.apply.ApplyApplication:55 - Starting ApplyApplication on bogon with PID 22826 (/Users/oceanBin/javaworkself/ocean-code-generator/apply/target/classes started by oceanBin in /Users/oceanBin/javaworkself/ocean-code-generator)
+11:48:33.443 [main] INFO  com.ocean.apply.ApplyApplication:655 - The following profiles are active: dev
+11:48:34.444 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:246 - Multiple Spring Data modules found, entering strict repository configuration mode!
+11:48:34.445 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+11:48:34.469 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:184 - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+11:48:34.787 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:48:35.098 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer:92 - Tomcat initialized with port(s): 8099 (http)
+11:48:35.113 [main] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8099"]
+11:48:35.114 [main] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+11:48:35.114 [main] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:48:35.256 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+11:48:35.256 [main] INFO  o.s.web.context.ContextLoader:284 - Root WebApplicationContext: initialization completed in 1722 ms
+11:48:35.361 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+11:48:35.779 [main] INFO  jdbc.connection:541 - 1. Connection opened
+11:48:35.779 [main] INFO  jdbc.audit:175 - 1. Connection.new Connection returned 
+11:48:35.781 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+11:48:35.782 [main] INFO  jdbc.audit:175 - 1. Connection.isClosed() returned false
+11:48:35.789 [main] INFO  jdbc.audit:175 - 1. Statement.new Statement returned 
+11:48:35.790 [main] INFO  jdbc.audit:175 - 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@299270eb
+11:48:35.792 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+11:48:35.795 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+11:48:35.806 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 11 msec}
+11:48:35.809 [main] INFO  jdbc.resultset:175 - 1. ResultSet.new ResultSet returned 
+11:48:35.810 [main] INFO  jdbc.audit:175 - 1. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@1da4b6b3
+11:48:35.813 [main] INFO  jdbc.resultset:175 - 1. ResultSet.next() returned true
+11:48:35.814 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+11:48:35.814 [main] INFO  jdbc.resultset:175 - 1. ResultSet.close() returned void
+11:48:35.814 [main] INFO  jdbc.audit:175 - 1. Statement.close() returned 
+11:48:35.815 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+11:48:35.815 [main] INFO  jdbc.audit:175 - 1. Connection.getHoldability() returned 2
+11:48:35.817 [main] INFO  jdbc.audit:175 - 1. Connection.isReadOnly() returned false
+11:48:35.819 [main] INFO  jdbc.audit:175 - 1. Connection.getTransactionIsolation() returned 4
+11:48:35.840 [main] INFO  jdbc.connection:541 - 2. Connection opened
+11:48:35.840 [main] INFO  jdbc.audit:175 - 2. Connection.new Connection returned 
+11:48:35.840 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+11:48:35.841 [main] INFO  jdbc.audit:175 - 2. Connection.isClosed() returned false
+11:48:35.841 [main] INFO  jdbc.audit:175 - 2. Statement.new Statement returned 
+11:48:35.841 [main] INFO  jdbc.audit:175 - 2. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@4d6ee47
+11:48:35.841 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+11:48:35.841 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+11:48:35.844 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 2 msec}
+11:48:35.845 [main] INFO  jdbc.resultset:175 - 2. ResultSet.new ResultSet returned 
+11:48:35.845 [main] INFO  jdbc.audit:175 - 2. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@a33b4e3
+11:48:35.845 [main] INFO  jdbc.resultset:175 - 2. ResultSet.next() returned true
+11:48:35.846 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+11:48:35.846 [main] INFO  jdbc.resultset:175 - 2. ResultSet.close() returned void
+11:48:35.846 [main] INFO  jdbc.audit:175 - 2. Statement.close() returned 
+11:48:35.846 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+11:48:35.846 [main] INFO  jdbc.audit:175 - 2. Connection.getHoldability() returned 2
+11:48:35.849 [main] INFO  jdbc.audit:175 - 2. Connection.isReadOnly() returned false
+11:48:35.852 [main] INFO  jdbc.audit:175 - 2. Connection.getTransactionIsolation() returned 4
+11:48:35.872 [main] INFO  jdbc.connection:541 - 3. Connection opened
+11:48:35.872 [main] INFO  jdbc.audit:175 - 3. Connection.new Connection returned 
+11:48:35.873 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+11:48:35.873 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+11:48:35.873 [main] INFO  jdbc.audit:175 - 3. Statement.new Statement returned 
+11:48:35.873 [main] INFO  jdbc.audit:175 - 3. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@8b91134
+11:48:35.874 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+11:48:35.874 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+11:48:35.876 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 2 msec}
+11:48:35.877 [main] INFO  jdbc.resultset:175 - 3. ResultSet.new ResultSet returned 
+11:48:35.877 [main] INFO  jdbc.audit:175 - 3. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@1fba386c
+11:48:35.877 [main] INFO  jdbc.resultset:175 - 3. ResultSet.next() returned true
+11:48:35.878 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+11:48:35.878 [main] INFO  jdbc.resultset:175 - 3. ResultSet.close() returned void
+11:48:35.878 [main] INFO  jdbc.audit:175 - 3. Statement.close() returned 
+11:48:35.878 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+11:48:35.879 [main] INFO  jdbc.audit:175 - 3. Connection.getHoldability() returned 2
+11:48:35.881 [main] INFO  jdbc.audit:175 - 3. Connection.isReadOnly() returned false
+11:48:35.884 [main] INFO  jdbc.audit:175 - 3. Connection.getTransactionIsolation() returned 4
+11:48:35.886 [main] INFO  c.alibaba.druid.pool.DruidDataSource:930 - {dataSource-1} inited
+11:48:36.004 [main] INFO  o.h.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:48:36.138 [main] INFO  org.hibernate.Version:46 - HHH000412: Hibernate Core {5.4.8.Final}
+11:48:36.393 [main] INFO  o.h.annotations.common.Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11:48:36.555 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+11:48:36.556 [main] INFO  jdbc.audit:175 - 3. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@12e5da86
+11:48:36.569 [main] INFO  org.hibernate.dialect.Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+11:48:36.619 [main] INFO  jdbc.audit:175 - 3. Connection.clearWarnings() returned 
+11:48:36.620 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+11:48:36.851 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+11:48:36.851 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+11:48:36.851 [main] INFO  jdbc.audit:175 - 3. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@53c1179a
+11:48:37.034 [main] INFO  jdbc.audit:175 - 3. Connection.clearWarnings() returned 
+11:48:37.034 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+11:48:37.034 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:48:37.053 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:48:37.296 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+11:48:37.962 [main] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+11:48:37.969 [main] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+11:48:37.969 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+11:48:37.970 [main] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+11:48:37.970 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+11:48:37.970 [main] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+11:48:37.971 [main] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+11:48:37.971 [main] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@191c6e13
+11:48:38.069 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 2f80c14a-49b4-4bac-95d3-652fff311d0d
+
+11:48:38.243 [main] INFO  o.s.s.web.DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58d4238e, org.springframework.security.web.context.SecurityContextPersistenceFilter@26da1ba2, org.springframework.security.web.header.HeaderWriterFilter@1332dec4, org.springframework.security.web.csrf.CsrfFilter@132e3594, org.springframework.security.web.authentication.logout.LogoutFilter@3487442d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@539c4830, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@353c6da1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@72a8361b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@238291d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2407a36c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4602f874, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36478bce, org.springframework.security.web.session.SessionManagementFilter@6889f56f, org.springframework.security.web.access.ExceptionTranslationFilter@4aaecabd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@52ecc989]
+11:48:38.291 [main] INFO  o.s.s.quartz.SchedulerFactoryBean:727 - Starting Quartz Scheduler now
+11:48:38.291 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+11:48:38.297 [main] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8099"]
+11:48:38.334 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 8099 (http) with context path ''
+11:48:38.337 [main] INFO  com.ocean.apply.ApplyApplication:61 - Started ApplyApplication in 5.374 seconds (JVM running for 6.114)
+11:49:05.969 [http-nio-8099-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:49:05.970 [http-nio-8099-exec-1] INFO  o.s.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+11:49:05.979 [http-nio-8099-exec-1] INFO  o.s.web.servlet.DispatcherServlet:547 - Completed initialization in 9 ms
+11:50:13.538 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+11:50:13.540 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean:845 - Shutting down Quartz Scheduler
+11:50:13.542 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+11:50:13.542 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+11:50:13.545 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+11:50:13.570 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+11:50:13.570 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:50:13.578 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 1. Connection closed
+11:50:13.578 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 1. Connection.close() returned 
+11:50:13.579 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 2. Connection closed
+11:50:13.579 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 2. Connection.close() returned 
+11:50:13.579 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 3. Connection closed
+11:50:13.579 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 3. Connection.close() returned 
+11:50:13.580 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource:1825 - {dataSource-1} closed
+11:50:37.602 [main] INFO  com.ocean.apply.ApplyApplication:55 - Starting ApplyApplication on bogon with PID 22843 (/Users/oceanBin/javaworkself/ocean-code-generator/apply/target/classes started by oceanBin in /Users/oceanBin/javaworkself/ocean-code-generator)
+11:50:37.606 [main] INFO  com.ocean.apply.ApplyApplication:655 - The following profiles are active: dev
+11:50:38.626 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:246 - Multiple Spring Data modules found, entering strict repository configuration mode!
+11:50:38.626 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+11:50:38.653 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:184 - Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+11:50:39.004 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:50:39.230 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer:92 - Tomcat initialized with port(s): 8078 (http)
+11:50:39.238 [main] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8078"]
+11:50:39.239 [main] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+11:50:39.239 [main] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:50:39.344 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+11:50:39.344 [main] INFO  o.s.web.context.ContextLoader:284 - Root WebApplicationContext: initialization completed in 1577 ms
+11:50:39.402 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+11:50:39.713 [main] INFO  jdbc.connection:541 - 1. Connection opened
+11:50:39.714 [main] INFO  jdbc.audit:175 - 1. Connection.new Connection returned 
+11:50:39.715 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+11:50:39.716 [main] INFO  jdbc.audit:175 - 1. Connection.isClosed() returned false
+11:50:39.720 [main] INFO  jdbc.audit:175 - 1. Statement.new Statement returned 
+11:50:39.720 [main] INFO  jdbc.audit:175 - 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@47ad69f7
+11:50:39.722 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+11:50:39.724 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+11:50:39.734 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 10 msec}
+11:50:39.738 [main] INFO  jdbc.resultset:175 - 1. ResultSet.new ResultSet returned 
+11:50:39.738 [main] INFO  jdbc.audit:175 - 1. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@76f856a8
+11:50:39.744 [main] INFO  jdbc.resultset:175 - 1. ResultSet.next() returned true
+11:50:39.745 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+11:50:39.746 [main] INFO  jdbc.resultset:175 - 1. ResultSet.close() returned void
+11:50:39.747 [main] INFO  jdbc.audit:175 - 1. Statement.close() returned 
+11:50:39.748 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+11:50:39.748 [main] INFO  jdbc.audit:175 - 1. Connection.getHoldability() returned 2
+11:50:39.751 [main] INFO  jdbc.audit:175 - 1. Connection.isReadOnly() returned false
+11:50:39.754 [main] INFO  jdbc.audit:175 - 1. Connection.getTransactionIsolation() returned 4
+11:50:39.773 [main] INFO  jdbc.connection:541 - 2. Connection opened
+11:50:39.773 [main] INFO  jdbc.audit:175 - 2. Connection.new Connection returned 
+11:50:39.773 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+11:50:39.774 [main] INFO  jdbc.audit:175 - 2. Connection.isClosed() returned false
+11:50:39.774 [main] INFO  jdbc.audit:175 - 2. Statement.new Statement returned 
+11:50:39.774 [main] INFO  jdbc.audit:175 - 2. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@409986fe
+11:50:39.774 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+11:50:39.774 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+11:50:39.776 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 2 msec}
+11:50:39.777 [main] INFO  jdbc.resultset:175 - 2. ResultSet.new ResultSet returned 
+11:50:39.777 [main] INFO  jdbc.audit:175 - 2. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@19b047fe
+11:50:39.778 [main] INFO  jdbc.resultset:175 - 2. ResultSet.next() returned true
+11:50:39.778 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+11:50:39.779 [main] INFO  jdbc.resultset:175 - 2. ResultSet.close() returned void
+11:50:39.779 [main] INFO  jdbc.audit:175 - 2. Statement.close() returned 
+11:50:39.779 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+11:50:39.779 [main] INFO  jdbc.audit:175 - 2. Connection.getHoldability() returned 2
+11:50:39.781 [main] INFO  jdbc.audit:175 - 2. Connection.isReadOnly() returned false
+11:50:39.784 [main] INFO  jdbc.audit:175 - 2. Connection.getTransactionIsolation() returned 4
+11:50:39.802 [main] INFO  jdbc.connection:541 - 3. Connection opened
+11:50:39.802 [main] INFO  jdbc.audit:175 - 3. Connection.new Connection returned 
+11:50:39.803 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+11:50:39.803 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+11:50:39.803 [main] INFO  jdbc.audit:175 - 3. Statement.new Statement returned 
+11:50:39.803 [main] INFO  jdbc.audit:175 - 3. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@5f780a86
+11:50:39.804 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+11:50:39.804 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+11:50:39.806 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 2 msec}
+11:50:39.807 [main] INFO  jdbc.resultset:175 - 3. ResultSet.new ResultSet returned 
+11:50:39.807 [main] INFO  jdbc.audit:175 - 3. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@446c3920
+11:50:39.807 [main] INFO  jdbc.resultset:175 - 3. ResultSet.next() returned true
+11:50:39.808 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+11:50:39.808 [main] INFO  jdbc.resultset:175 - 3. ResultSet.close() returned void
+11:50:39.808 [main] INFO  jdbc.audit:175 - 3. Statement.close() returned 
+11:50:39.808 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+11:50:39.808 [main] INFO  jdbc.audit:175 - 3. Connection.getHoldability() returned 2
+11:50:39.811 [main] INFO  jdbc.audit:175 - 3. Connection.isReadOnly() returned false
+11:50:39.814 [main] INFO  jdbc.audit:175 - 3. Connection.getTransactionIsolation() returned 4
+11:50:39.816 [main] INFO  c.alibaba.druid.pool.DruidDataSource:930 - {dataSource-1} inited
+11:50:39.894 [main] INFO  o.h.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:50:39.935 [main] INFO  org.hibernate.Version:46 - HHH000412: Hibernate Core {5.4.8.Final}
+11:50:40.034 [main] INFO  o.h.annotations.common.Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11:50:40.100 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+11:50:40.100 [main] INFO  jdbc.audit:175 - 3. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@67064bdc
+11:50:40.105 [main] INFO  org.hibernate.dialect.Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+11:50:40.131 [main] INFO  jdbc.audit:175 - 3. Connection.clearWarnings() returned 
+11:50:40.131 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+11:50:40.240 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+11:50:40.241 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+11:50:40.241 [main] INFO  jdbc.audit:175 - 3. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@f5ce0bb
+11:50:40.419 [main] INFO  jdbc.audit:175 - 3. Connection.clearWarnings() returned 
+11:50:40.420 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+11:50:40.420 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:50:40.426 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:50:40.617 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+11:50:40.993 [main] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+11:50:41.000 [main] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+11:50:41.000 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+11:50:41.001 [main] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+11:50:41.002 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+11:50:41.002 [main] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+11:50:41.002 [main] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+11:50:41.002 [main] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@47df5041
+11:50:41.060 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 73f64c7f-9ab0-4d3c-9a67-90d645628297
+
+11:50:41.130 [main] INFO  o.s.s.web.DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f8f1712, org.springframework.security.web.context.SecurityContextPersistenceFilter@138f0661, org.springframework.security.web.header.HeaderWriterFilter@2bec068b, org.springframework.security.web.csrf.CsrfFilter@6075b369, org.springframework.security.web.authentication.logout.LogoutFilter@26da1ba2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@93bf0e0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@51888019, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@34a6d9db, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2055833f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@448462f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c835217, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52ecc989, org.springframework.security.web.session.SessionManagementFilter@55361f03, org.springframework.security.web.access.ExceptionTranslationFilter@2eb0cefe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@546ed2a0]
+11:50:41.166 [main] INFO  o.s.s.quartz.SchedulerFactoryBean:727 - Starting Quartz Scheduler now
+11:50:41.166 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+11:50:41.171 [main] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8078"]
+11:50:41.204 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 8078 (http) with context path ''
+11:50:41.209 [main] INFO  com.ocean.apply.ApplyApplication:61 - Started ApplyApplication in 4.008 seconds (JVM running for 4.658)
+11:51:23.630 [http-nio-8078-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:51:23.630 [http-nio-8078-exec-1] INFO  o.s.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+11:51:23.636 [http-nio-8078-exec-1] INFO  o.s.web.servlet.DispatcherServlet:547 - Completed initialization in 6 ms
+11:52:16.085 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+11:52:16.088 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean:845 - Shutting down Quartz Scheduler
+11:52:16.088 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+11:52:16.088 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+11:52:16.091 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+11:52:16.107 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+11:52:16.107 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:52:16.112 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 1. Connection closed
+11:52:16.112 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 1. Connection.close() returned 
+11:52:16.112 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 2. Connection closed
+11:52:16.113 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 2. Connection.close() returned 
+11:52:16.113 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 3. Connection closed
+11:52:16.113 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 3. Connection.close() returned 
+11:52:16.114 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource:1825 - {dataSource-1} closed
+11:59:22.771 [main] INFO  com.ocean.apply.ApplyApplication:55 - Starting ApplyApplication on bogon with PID 22865 (/Users/oceanBin/javaworkself/ocean-code-generator/apply/target/classes started by oceanBin in /Users/oceanBin/javaworkself/ocean-code-generator)
+11:59:22.777 [main] INFO  com.ocean.apply.ApplyApplication:655 - The following profiles are active: dev
+11:59:23.700 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:246 - Multiple Spring Data modules found, entering strict repository configuration mode!
+11:59:23.701 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+11:59:23.721 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:184 - Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+11:59:24.012 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:59:24.236 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer:92 - Tomcat initialized with port(s): 8078 (http)
+11:59:24.243 [main] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8078"]
+11:59:24.244 [main] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+11:59:24.244 [main] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.27]
+11:59:24.350 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+11:59:24.350 [main] INFO  o.s.web.context.ContextLoader:284 - Root WebApplicationContext: initialization completed in 1453 ms
+11:59:24.435 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+11:59:24.806 [main] INFO  jdbc.connection:541 - 1. Connection opened
+11:59:24.806 [main] INFO  jdbc.audit:175 - 1. Connection.new Connection returned 
+11:59:24.807 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+11:59:24.808 [main] INFO  jdbc.audit:175 - 1. Connection.isClosed() returned false
+11:59:24.812 [main] INFO  jdbc.audit:175 - 1. Statement.new Statement returned 
+11:59:24.812 [main] INFO  jdbc.audit:175 - 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@540b0448
+11:59:24.814 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+11:59:24.815 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+11:59:24.824 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 8 msec}
+11:59:24.828 [main] INFO  jdbc.resultset:175 - 1. ResultSet.new ResultSet returned 
+11:59:24.829 [main] INFO  jdbc.audit:175 - 1. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@5432c277
+11:59:24.831 [main] INFO  jdbc.resultset:175 - 1. ResultSet.next() returned true
+11:59:24.832 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+11:59:24.832 [main] INFO  jdbc.resultset:175 - 1. ResultSet.close() returned void
+11:59:24.833 [main] INFO  jdbc.audit:175 - 1. Statement.close() returned 
+11:59:24.833 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+11:59:24.834 [main] INFO  jdbc.audit:175 - 1. Connection.getHoldability() returned 2
+11:59:24.837 [main] INFO  jdbc.audit:175 - 1. Connection.isReadOnly() returned false
+11:59:24.840 [main] INFO  jdbc.audit:175 - 1. Connection.getTransactionIsolation() returned 4
+11:59:24.862 [main] INFO  jdbc.connection:541 - 2. Connection opened
+11:59:24.862 [main] INFO  jdbc.audit:175 - 2. Connection.new Connection returned 
+11:59:24.863 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+11:59:24.863 [main] INFO  jdbc.audit:175 - 2. Connection.isClosed() returned false
+11:59:24.863 [main] INFO  jdbc.audit:175 - 2. Statement.new Statement returned 
+11:59:24.864 [main] INFO  jdbc.audit:175 - 2. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@f446158
+11:59:24.865 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+11:59:24.865 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+11:59:24.868 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 3 msec}
+11:59:24.868 [main] INFO  jdbc.resultset:175 - 2. ResultSet.new ResultSet returned 
+11:59:24.868 [main] INFO  jdbc.audit:175 - 2. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@32f0c7f8
+11:59:24.869 [main] INFO  jdbc.resultset:175 - 2. ResultSet.next() returned true
+11:59:24.870 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+11:59:24.870 [main] INFO  jdbc.resultset:175 - 2. ResultSet.close() returned void
+11:59:24.870 [main] INFO  jdbc.audit:175 - 2. Statement.close() returned 
+11:59:24.871 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+11:59:24.871 [main] INFO  jdbc.audit:175 - 2. Connection.getHoldability() returned 2
+11:59:24.874 [main] INFO  jdbc.audit:175 - 2. Connection.isReadOnly() returned false
+11:59:24.877 [main] INFO  jdbc.audit:175 - 2. Connection.getTransactionIsolation() returned 4
+11:59:24.896 [main] INFO  jdbc.connection:541 - 3. Connection opened
+11:59:24.897 [main] INFO  jdbc.audit:175 - 3. Connection.new Connection returned 
+11:59:24.897 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+11:59:24.898 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+11:59:24.898 [main] INFO  jdbc.audit:175 - 3. Statement.new Statement returned 
+11:59:24.898 [main] INFO  jdbc.audit:175 - 3. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@5d1b9c3d
+11:59:24.898 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+11:59:24.899 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+11:59:24.903 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 4 msec}
+11:59:24.903 [main] INFO  jdbc.resultset:175 - 3. ResultSet.new ResultSet returned 
+11:59:24.904 [main] INFO  jdbc.audit:175 - 3. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@69e05f61
+11:59:24.904 [main] INFO  jdbc.resultset:175 - 3. ResultSet.next() returned true
+11:59:24.904 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+11:59:24.904 [main] INFO  jdbc.resultset:175 - 3. ResultSet.close() returned void
+11:59:24.905 [main] INFO  jdbc.audit:175 - 3. Statement.close() returned 
+11:59:24.905 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+11:59:24.905 [main] INFO  jdbc.audit:175 - 3. Connection.getHoldability() returned 2
+11:59:24.907 [main] INFO  jdbc.audit:175 - 3. Connection.isReadOnly() returned false
+11:59:24.911 [main] INFO  jdbc.audit:175 - 3. Connection.getTransactionIsolation() returned 4
+11:59:24.915 [main] INFO  c.alibaba.druid.pool.DruidDataSource:930 - {dataSource-1} inited
+11:59:24.997 [main] INFO  o.h.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:59:25.055 [main] INFO  org.hibernate.Version:46 - HHH000412: Hibernate Core {5.4.8.Final}
+11:59:25.155 [main] INFO  o.h.annotations.common.Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11:59:25.214 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+11:59:25.214 [main] INFO  jdbc.audit:175 - 3. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@37c36608
+11:59:25.219 [main] INFO  org.hibernate.dialect.Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+11:59:25.248 [main] INFO  jdbc.audit:175 - 3. Connection.clearWarnings() returned 
+11:59:25.248 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+11:59:25.358 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+11:59:25.358 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+11:59:25.358 [main] INFO  jdbc.audit:175 - 3. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@77f905e3
+11:59:25.560 [main] INFO  jdbc.audit:175 - 3. Connection.clearWarnings() returned 
+11:59:25.561 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+11:59:25.561 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:59:25.569 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:59:25.752 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+11:59:26.181 [main] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+11:59:26.191 [main] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+11:59:26.191 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+11:59:26.191 [main] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+11:59:26.192 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+11:59:26.192 [main] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+11:59:26.192 [main] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+11:59:26.192 [main] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@402f8592
+11:59:26.262 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 789a89b8-35a8-4b8c-a76f-7c41aaa5e74e
+
+11:59:26.353 [main] INFO  o.s.s.web.DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@682e422c, org.springframework.security.web.context.SecurityContextPersistenceFilter@6459f4ea, org.springframework.security.web.header.HeaderWriterFilter@350323a0, org.springframework.security.web.csrf.CsrfFilter@37d28938, org.springframework.security.web.authentication.logout.LogoutFilter@2eb0cefe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4fd74223, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@38159384, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5bb8e6fc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7a66c35a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@476fde05, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3002e397, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2726a511, org.springframework.security.web.session.SessionManagementFilter@5d7dd549, org.springframework.security.web.access.ExceptionTranslationFilter@43d76a92, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43c7fe8a]
+11:59:26.402 [main] INFO  o.s.s.quartz.SchedulerFactoryBean:727 - Starting Quartz Scheduler now
+11:59:26.403 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+11:59:26.409 [main] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8078"]
+11:59:26.438 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 8078 (http) with context path ''
+11:59:26.441 [main] INFO  com.ocean.apply.ApplyApplication:61 - Started ApplyApplication in 4.148 seconds (JVM running for 4.867)
+11:59:46.668 [http-nio-8078-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:59:46.668 [http-nio-8078-exec-1] INFO  o.s.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+11:59:46.676 [http-nio-8078-exec-1] INFO  o.s.web.servlet.DispatcherServlet:547 - Completed initialization in 8 ms
+13:33:09.833 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+13:33:09.834 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean:845 - Shutting down Quartz Scheduler
+13:33:09.834 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+13:33:09.834 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+13:33:09.835 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+13:33:09.864 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+13:33:09.865 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+13:33:09.872 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 1. Connection closed
+13:33:09.873 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 1. Connection.close() returned 
+13:33:09.873 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 2. Connection closed
+13:33:09.873 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 2. Connection.close() returned 
+13:33:09.874 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 3. Connection closed
+13:33:09.874 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 3. Connection.close() returned 
+13:33:09.874 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource:1825 - {dataSource-1} closed
+14:00:24.116 [main] INFO  com.ocean.apply.ApplyApplication:55 - Starting ApplyApplication on bogon with PID 23073 (/Users/oceanBin/javaworkself/ocean-code-generator/apply/target/classes started by oceanBin in /Users/oceanBin/javaworkself/ocean-code-generator)
+14:00:24.120 [main] INFO  com.ocean.apply.ApplyApplication:655 - The following profiles are active: dev
+14:00:25.178 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:246 - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:00:25.178 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+14:00:25.201 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:184 - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+14:00:25.491 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:00:25.786 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer:92 - Tomcat initialized with port(s): 8078 (http)
+14:00:25.801 [main] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8078"]
+14:00:25.801 [main] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+14:00:25.802 [main] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.27]
+14:00:25.943 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+14:00:25.943 [main] INFO  o.s.web.context.ContextLoader:284 - Root WebApplicationContext: initialization completed in 1732 ms
+14:00:26.057 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+14:00:26.571 [main] INFO  jdbc.connection:541 - 1. Connection opened
+14:00:26.571 [main] INFO  jdbc.audit:175 - 1. Connection.new Connection returned 
+14:00:26.573 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+14:00:26.573 [main] INFO  jdbc.audit:175 - 1. Connection.isClosed() returned false
+14:00:26.581 [main] INFO  jdbc.audit:175 - 1. Statement.new Statement returned 
+14:00:26.581 [main] INFO  jdbc.audit:175 - 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@288cdaab
+14:00:26.584 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+14:00:26.587 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+14:00:26.597 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 9 msec}
+14:00:26.601 [main] INFO  jdbc.resultset:175 - 1. ResultSet.new ResultSet returned 
+14:00:26.601 [main] INFO  jdbc.audit:175 - 1. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@4315e9af
+14:00:26.605 [main] INFO  jdbc.resultset:175 - 1. ResultSet.next() returned true
+14:00:26.606 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+14:00:26.606 [main] INFO  jdbc.resultset:175 - 1. ResultSet.close() returned void
+14:00:26.606 [main] INFO  jdbc.audit:175 - 1. Statement.close() returned 
+14:00:26.606 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+14:00:26.607 [main] INFO  jdbc.audit:175 - 1. Connection.getHoldability() returned 2
+14:00:26.609 [main] INFO  jdbc.audit:175 - 1. Connection.isReadOnly() returned false
+14:00:26.612 [main] INFO  jdbc.audit:175 - 1. Connection.getTransactionIsolation() returned 4
+14:00:26.632 [main] INFO  jdbc.connection:541 - 2. Connection opened
+14:00:26.632 [main] INFO  jdbc.audit:175 - 2. Connection.new Connection returned 
+14:00:26.633 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+14:00:26.633 [main] INFO  jdbc.audit:175 - 2. Connection.isClosed() returned false
+14:00:26.633 [main] INFO  jdbc.audit:175 - 2. Statement.new Statement returned 
+14:00:26.634 [main] INFO  jdbc.audit:175 - 2. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@18ac53e8
+14:00:26.634 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+14:00:26.634 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+14:00:26.637 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 3 msec}
+14:00:26.637 [main] INFO  jdbc.resultset:175 - 2. ResultSet.new ResultSet returned 
+14:00:26.638 [main] INFO  jdbc.audit:175 - 2. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@4ca8dbfa
+14:00:26.638 [main] INFO  jdbc.resultset:175 - 2. ResultSet.next() returned true
+14:00:26.639 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+14:00:26.639 [main] INFO  jdbc.resultset:175 - 2. ResultSet.close() returned void
+14:00:26.639 [main] INFO  jdbc.audit:175 - 2. Statement.close() returned 
+14:00:26.639 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+14:00:26.640 [main] INFO  jdbc.audit:175 - 2. Connection.getHoldability() returned 2
+14:00:26.642 [main] INFO  jdbc.audit:175 - 2. Connection.isReadOnly() returned false
+14:00:26.645 [main] INFO  jdbc.audit:175 - 2. Connection.getTransactionIsolation() returned 4
+14:00:26.668 [main] INFO  jdbc.connection:541 - 3. Connection opened
+14:00:26.668 [main] INFO  jdbc.audit:175 - 3. Connection.new Connection returned 
+14:00:26.668 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:00:26.669 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:00:26.669 [main] INFO  jdbc.audit:175 - 3. Statement.new Statement returned 
+14:00:26.669 [main] INFO  jdbc.audit:175 - 3. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@76f856a8
+14:00:26.670 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:00:26.670 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+14:00:26.673 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 3 msec}
+14:00:26.673 [main] INFO  jdbc.resultset:175 - 3. ResultSet.new ResultSet returned 
+14:00:26.674 [main] INFO  jdbc.audit:175 - 3. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@7c853486
+14:00:26.674 [main] INFO  jdbc.resultset:175 - 3. ResultSet.next() returned true
+14:00:26.674 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+14:00:26.675 [main] INFO  jdbc.resultset:175 - 3. ResultSet.close() returned void
+14:00:26.675 [main] INFO  jdbc.audit:175 - 3. Statement.close() returned 
+14:00:26.675 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:00:26.675 [main] INFO  jdbc.audit:175 - 3. Connection.getHoldability() returned 2
+14:00:26.678 [main] INFO  jdbc.audit:175 - 3. Connection.isReadOnly() returned false
+14:00:26.681 [main] INFO  jdbc.audit:175 - 3. Connection.getTransactionIsolation() returned 4
+14:00:26.684 [main] INFO  c.alibaba.druid.pool.DruidDataSource:930 - {dataSource-1} inited
+14:00:26.811 [main] INFO  o.h.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:00:26.897 [main] INFO  org.hibernate.Version:46 - HHH000412: Hibernate Core {5.4.8.Final}
+14:00:27.058 [main] INFO  o.h.annotations.common.Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+14:00:27.163 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:00:27.163 [main] INFO  jdbc.audit:175 - 3. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@4993febc
+14:00:27.172 [main] INFO  org.hibernate.dialect.Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+14:00:27.211 [main] INFO  jdbc.audit:175 - 3. Connection.clearWarnings() returned 
+14:00:27.211 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:00:27.354 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:00:27.354 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:00:27.354 [main] INFO  jdbc.audit:175 - 3. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@6e3eb0cd
+14:00:27.503 [main] INFO  jdbc.audit:175 - 3. Connection.clearWarnings() returned 
+14:00:27.503 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:00:27.503 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:00:27.515 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:00:27.695 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+14:00:28.297 [main] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+14:00:28.304 [main] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:00:28.304 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+14:00:28.304 [main] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+14:00:28.305 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+14:00:28.305 [main] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+14:00:28.305 [main] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+14:00:28.305 [main] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@89caf47
+14:00:28.393 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 73e6039d-4a04-4b6d-8870-d3da7cc387dd
+
+14:00:28.551 [main] INFO  o.s.s.web.DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@656842bc, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d4a82, org.springframework.security.web.header.HeaderWriterFilter@7da1e005, org.springframework.security.web.csrf.CsrfFilter@2506b881, org.springframework.security.web.authentication.logout.LogoutFilter@586cc15d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@72c9ebfa, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@448462f0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6b867ee7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@19662208, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a0ab480, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@138f0661, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3dec3f87, org.springframework.security.web.session.SessionManagementFilter@55877274, org.springframework.security.web.access.ExceptionTranslationFilter@6b70d1fb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7994a0d1]
+14:00:28.595 [main] INFO  o.s.s.quartz.SchedulerFactoryBean:727 - Starting Quartz Scheduler now
+14:00:28.595 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+14:00:28.601 [main] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8078"]
+14:00:28.641 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 8078 (http) with context path ''
+14:00:28.645 [main] INFO  com.ocean.apply.ApplyApplication:61 - Started ApplyApplication in 5.082 seconds (JVM running for 6.183)
+14:00:42.066 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+14:00:42.072 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean:845 - Shutting down Quartz Scheduler
+14:00:42.072 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+14:00:42.073 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+14:00:42.073 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+14:00:42.093 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+14:00:42.093 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+14:00:42.100 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 1. Connection closed
+14:00:42.100 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 1. Connection.close() returned 
+14:00:42.100 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 2. Connection closed
+14:00:42.101 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 2. Connection.close() returned 
+14:00:42.101 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 3. Connection closed
+14:00:42.101 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 3. Connection.close() returned 
+14:00:42.101 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource:1825 - {dataSource-1} closed
+14:01:44.537 [main] INFO  com.ocean.apply.ApplyApplication:55 - Starting ApplyApplication on bogon with PID 23093 (/Users/oceanBin/javaworkself/ocean-code-generator/apply/target/classes started by oceanBin in /Users/oceanBin/javaworkself/ocean-code-generator)
+14:01:44.565 [main] INFO  com.ocean.apply.ApplyApplication:655 - The following profiles are active: dev
+14:01:45.440 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:246 - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:01:45.441 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+14:01:45.462 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:184 - Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+14:01:45.752 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:01:45.947 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer:92 - Tomcat initialized with port(s): 8078 (http)
+14:01:45.954 [main] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8078"]
+14:01:45.955 [main] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+14:01:45.956 [main] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.27]
+14:01:46.067 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+14:01:46.067 [main] INFO  o.s.web.context.ContextLoader:284 - Root WebApplicationContext: initialization completed in 1375 ms
+14:01:46.123 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+14:01:46.432 [main] INFO  jdbc.connection:541 - 1. Connection opened
+14:01:46.433 [main] INFO  jdbc.audit:175 - 1. Connection.new Connection returned 
+14:01:46.434 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+14:01:46.434 [main] INFO  jdbc.audit:175 - 1. Connection.isClosed() returned false
+14:01:46.440 [main] INFO  jdbc.audit:175 - 1. Statement.new Statement returned 
+14:01:46.441 [main] INFO  jdbc.audit:175 - 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@6601cc93
+14:01:46.443 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+14:01:46.445 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+14:01:46.460 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 14 msec}
+14:01:46.465 [main] INFO  jdbc.resultset:175 - 1. ResultSet.new ResultSet returned 
+14:01:46.465 [main] INFO  jdbc.audit:175 - 1. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@bdd2027
+14:01:46.468 [main] INFO  jdbc.resultset:175 - 1. ResultSet.next() returned true
+14:01:46.470 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+14:01:46.470 [main] INFO  jdbc.resultset:175 - 1. ResultSet.close() returned void
+14:01:46.471 [main] INFO  jdbc.audit:175 - 1. Statement.close() returned 
+14:01:46.471 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+14:01:46.472 [main] INFO  jdbc.audit:175 - 1. Connection.getHoldability() returned 2
+14:01:46.474 [main] INFO  jdbc.audit:175 - 1. Connection.isReadOnly() returned false
+14:01:46.476 [main] INFO  jdbc.audit:175 - 1. Connection.getTransactionIsolation() returned 4
+14:01:46.500 [main] INFO  jdbc.connection:541 - 2. Connection opened
+14:01:46.500 [main] INFO  jdbc.audit:175 - 2. Connection.new Connection returned 
+14:01:46.501 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+14:01:46.501 [main] INFO  jdbc.audit:175 - 2. Connection.isClosed() returned false
+14:01:46.501 [main] INFO  jdbc.audit:175 - 2. Statement.new Statement returned 
+14:01:46.502 [main] INFO  jdbc.audit:175 - 2. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@730e5763
+14:01:46.502 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+14:01:46.502 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+14:01:46.504 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 2 msec}
+14:01:46.504 [main] INFO  jdbc.resultset:175 - 2. ResultSet.new ResultSet returned 
+14:01:46.505 [main] INFO  jdbc.audit:175 - 2. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@7275c74b
+14:01:46.505 [main] INFO  jdbc.resultset:175 - 2. ResultSet.next() returned true
+14:01:46.506 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+14:01:46.506 [main] INFO  jdbc.resultset:175 - 2. ResultSet.close() returned void
+14:01:46.506 [main] INFO  jdbc.audit:175 - 2. Statement.close() returned 
+14:01:46.507 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+14:01:46.507 [main] INFO  jdbc.audit:175 - 2. Connection.getHoldability() returned 2
+14:01:46.509 [main] INFO  jdbc.audit:175 - 2. Connection.isReadOnly() returned false
+14:01:46.511 [main] INFO  jdbc.audit:175 - 2. Connection.getTransactionIsolation() returned 4
+14:01:46.532 [main] INFO  jdbc.connection:541 - 3. Connection opened
+14:01:46.532 [main] INFO  jdbc.audit:175 - 3. Connection.new Connection returned 
+14:01:46.533 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:01:46.533 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:01:46.534 [main] INFO  jdbc.audit:175 - 3. Statement.new Statement returned 
+14:01:46.534 [main] INFO  jdbc.audit:175 - 3. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@42210be1
+14:01:46.535 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:01:46.535 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+14:01:46.537 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 2 msec}
+14:01:46.537 [main] INFO  jdbc.resultset:175 - 3. ResultSet.new ResultSet returned 
+14:01:46.538 [main] INFO  jdbc.audit:175 - 3. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@1eb2d371
+14:01:46.538 [main] INFO  jdbc.resultset:175 - 3. ResultSet.next() returned true
+14:01:46.538 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+14:01:46.539 [main] INFO  jdbc.resultset:175 - 3. ResultSet.close() returned void
+14:01:46.539 [main] INFO  jdbc.audit:175 - 3. Statement.close() returned 
+14:01:46.539 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:01:46.540 [main] INFO  jdbc.audit:175 - 3. Connection.getHoldability() returned 2
+14:01:46.542 [main] INFO  jdbc.audit:175 - 3. Connection.isReadOnly() returned false
+14:01:46.544 [main] INFO  jdbc.audit:175 - 3. Connection.getTransactionIsolation() returned 4
+14:01:46.547 [main] INFO  c.alibaba.druid.pool.DruidDataSource:930 - {dataSource-1} inited
+14:01:46.619 [main] INFO  o.h.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:01:46.662 [main] INFO  org.hibernate.Version:46 - HHH000412: Hibernate Core {5.4.8.Final}
+14:01:46.760 [main] INFO  o.h.annotations.common.Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+14:01:46.827 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:01:46.827 [main] INFO  jdbc.audit:175 - 3. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@7e0bc8a3
+14:01:46.832 [main] INFO  org.hibernate.dialect.Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+14:01:46.859 [main] INFO  jdbc.audit:175 - 3. Connection.clearWarnings() returned 
+14:01:46.860 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:01:46.970 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:01:46.971 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:01:46.971 [main] INFO  jdbc.audit:175 - 3. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@31142d58
+14:01:47.147 [main] INFO  jdbc.audit:175 - 3. Connection.clearWarnings() returned 
+14:01:47.147 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:01:47.148 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:01:47.153 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:01:47.339 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+14:01:47.722 [main] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+14:01:47.729 [main] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:01:47.729 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+14:01:47.730 [main] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+14:01:47.730 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+14:01:47.730 [main] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+14:01:47.730 [main] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+14:01:47.730 [main] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6403a4a5
+14:01:47.788 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 910c64c3-8d0f-486d-8b09-ff7a09bd3406
+
+14:01:47.863 [main] INFO  o.s.s.web.DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b48f0f4, org.springframework.security.web.context.SecurityContextPersistenceFilter@342ee097, org.springframework.security.web.header.HeaderWriterFilter@5111de7c, org.springframework.security.web.csrf.CsrfFilter@70881123, org.springframework.security.web.authentication.logout.LogoutFilter@212fafd1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6812c8cc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@130cfc47, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@546ed2a0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5bb8e6fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12192604, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a0ab480, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5bfc79cb, org.springframework.security.web.session.SessionManagementFilter@52354202, org.springframework.security.web.access.ExceptionTranslationFilter@740b9a50, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@76563ae7]
+14:01:47.898 [main] INFO  o.s.s.quartz.SchedulerFactoryBean:727 - Starting Quartz Scheduler now
+14:01:47.899 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+14:01:47.904 [main] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8078"]
+14:01:47.937 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 8078 (http) with context path ''
+14:01:47.942 [main] INFO  com.ocean.apply.ApplyApplication:61 - Started ApplyApplication in 3.776 seconds (JVM running for 4.502)
+14:02:09.393 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+14:02:09.396 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean:845 - Shutting down Quartz Scheduler
+14:02:09.396 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+14:02:09.397 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+14:02:09.397 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+14:02:09.414 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+14:02:09.415 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+14:02:09.420 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 1. Connection closed
+14:02:09.420 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 1. Connection.close() returned 
+14:02:09.420 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 2. Connection closed
+14:02:09.420 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 2. Connection.close() returned 
+14:02:09.421 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 3. Connection closed
+14:02:09.421 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 3. Connection.close() returned 
+14:02:09.421 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource:1825 - {dataSource-1} closed
+14:03:34.335 [main] INFO  com.ocean.apply.ApplyApplication:55 - Starting ApplyApplication on bogon with PID 23120 (/Users/oceanBin/javaworkself/ocean-code-generator/apply/target/classes started by oceanBin in /Users/oceanBin/javaworkself/ocean-code-generator)
+14:03:34.339 [main] INFO  com.ocean.apply.ApplyApplication:655 - The following profiles are active: dev
+14:03:35.353 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:246 - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:03:35.354 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+14:03:35.377 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:184 - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+14:03:35.832 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:03:36.042 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer:92 - Tomcat initialized with port(s): 8078 (http)
+14:03:36.049 [main] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8078"]
+14:03:36.049 [main] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+14:03:36.050 [main] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.27]
+14:03:36.163 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+14:03:36.164 [main] INFO  o.s.web.context.ContextLoader:284 - Root WebApplicationContext: initialization completed in 1758 ms
+14:03:36.225 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+14:03:36.555 [main] INFO  jdbc.connection:541 - 1. Connection opened
+14:03:36.556 [main] INFO  jdbc.audit:175 - 1. Connection.new Connection returned 
+14:03:36.557 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+14:03:36.558 [main] INFO  jdbc.audit:175 - 1. Connection.isClosed() returned false
+14:03:36.565 [main] INFO  jdbc.audit:175 - 1. Statement.new Statement returned 
+14:03:36.565 [main] INFO  jdbc.audit:175 - 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@70331432
+14:03:36.571 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+14:03:36.575 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+14:03:36.585 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 9 msec}
+14:03:36.587 [main] INFO  jdbc.resultset:175 - 1. ResultSet.new ResultSet returned 
+14:03:36.587 [main] INFO  jdbc.audit:175 - 1. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@53dad875
+14:03:36.590 [main] INFO  jdbc.resultset:175 - 1. ResultSet.next() returned true
+14:03:36.591 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+14:03:36.591 [main] INFO  jdbc.resultset:175 - 1. ResultSet.close() returned void
+14:03:36.591 [main] INFO  jdbc.audit:175 - 1. Statement.close() returned 
+14:03:36.592 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+14:03:36.592 [main] INFO  jdbc.audit:175 - 1. Connection.getHoldability() returned 2
+14:03:36.595 [main] INFO  jdbc.audit:175 - 1. Connection.isReadOnly() returned false
+14:03:36.598 [main] INFO  jdbc.audit:175 - 1. Connection.getTransactionIsolation() returned 4
+14:03:36.619 [main] INFO  jdbc.connection:541 - 2. Connection opened
+14:03:36.619 [main] INFO  jdbc.audit:175 - 2. Connection.new Connection returned 
+14:03:36.621 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+14:03:36.621 [main] INFO  jdbc.audit:175 - 2. Connection.isClosed() returned false
+14:03:36.621 [main] INFO  jdbc.audit:175 - 2. Statement.new Statement returned 
+14:03:36.622 [main] INFO  jdbc.audit:175 - 2. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@4f67e3df
+14:03:36.622 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+14:03:36.623 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+14:03:36.626 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 3 msec}
+14:03:36.626 [main] INFO  jdbc.resultset:175 - 2. ResultSet.new ResultSet returned 
+14:03:36.626 [main] INFO  jdbc.audit:175 - 2. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@56681eaf
+14:03:36.627 [main] INFO  jdbc.resultset:175 - 2. ResultSet.next() returned true
+14:03:36.627 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+14:03:36.627 [main] INFO  jdbc.resultset:175 - 2. ResultSet.close() returned void
+14:03:36.628 [main] INFO  jdbc.audit:175 - 2. Statement.close() returned 
+14:03:36.628 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+14:03:36.628 [main] INFO  jdbc.audit:175 - 2. Connection.getHoldability() returned 2
+14:03:36.630 [main] INFO  jdbc.audit:175 - 2. Connection.isReadOnly() returned false
+14:03:36.632 [main] INFO  jdbc.audit:175 - 2. Connection.getTransactionIsolation() returned 4
+14:03:36.650 [main] INFO  jdbc.connection:541 - 3. Connection opened
+14:03:36.651 [main] INFO  jdbc.audit:175 - 3. Connection.new Connection returned 
+14:03:36.651 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:03:36.652 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:03:36.652 [main] INFO  jdbc.audit:175 - 3. Statement.new Statement returned 
+14:03:36.652 [main] INFO  jdbc.audit:175 - 3. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@1da4b6b3
+14:03:36.652 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:03:36.652 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+14:03:36.656 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 3 msec}
+14:03:36.657 [main] INFO  jdbc.resultset:175 - 3. ResultSet.new ResultSet returned 
+14:03:36.657 [main] INFO  jdbc.audit:175 - 3. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@b2f4ece
+14:03:36.657 [main] INFO  jdbc.resultset:175 - 3. ResultSet.next() returned true
+14:03:36.658 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+14:03:36.658 [main] INFO  jdbc.resultset:175 - 3. ResultSet.close() returned void
+14:03:36.659 [main] INFO  jdbc.audit:175 - 3. Statement.close() returned 
+14:03:36.659 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:03:36.659 [main] INFO  jdbc.audit:175 - 3. Connection.getHoldability() returned 2
+14:03:36.661 [main] INFO  jdbc.audit:175 - 3. Connection.isReadOnly() returned false
+14:03:36.663 [main] INFO  jdbc.audit:175 - 3. Connection.getTransactionIsolation() returned 4
+14:03:36.666 [main] INFO  c.alibaba.druid.pool.DruidDataSource:930 - {dataSource-1} inited
+14:03:36.739 [main] INFO  o.h.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:03:36.801 [main] INFO  org.hibernate.Version:46 - HHH000412: Hibernate Core {5.4.8.Final}
+14:03:36.913 [main] INFO  o.h.annotations.common.Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+14:03:36.980 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:03:36.981 [main] INFO  jdbc.audit:175 - 3. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@44032fde
+14:03:36.986 [main] INFO  org.hibernate.dialect.Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+14:03:37.027 [main] INFO  jdbc.audit:175 - 3. Connection.clearWarnings() returned 
+14:03:37.028 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:03:37.147 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:03:37.147 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:03:37.147 [main] INFO  jdbc.audit:175 - 3. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@1220ef43
+14:03:37.323 [main] INFO  jdbc.audit:175 - 3. Connection.clearWarnings() returned 
+14:03:37.323 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:03:37.323 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:03:37.329 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:03:37.488 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+14:03:37.920 [main] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+14:03:37.927 [main] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:03:37.927 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+14:03:37.927 [main] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+14:03:37.928 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+14:03:37.928 [main] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+14:03:37.928 [main] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+14:03:37.928 [main] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@168142da
+14:03:37.983 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: d1cbdf41-3222-4fa5-b636-b5656eb94da4
+
+14:03:38.067 [main] INFO  o.s.s.web.DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28b523a, org.springframework.security.web.context.SecurityContextPersistenceFilter@586cc15d, org.springframework.security.web.header.HeaderWriterFilter@7e3d2ebd, org.springframework.security.web.csrf.CsrfFilter@130cfc47, org.springframework.security.web.authentication.logout.LogoutFilter@5a7b309b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@143fefaf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2407a36c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@52ba685a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6486fe7b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4584304, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26da1ba2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63d677f5, org.springframework.security.web.session.SessionManagementFilter@3a4a5f3c, org.springframework.security.web.access.ExceptionTranslationFilter@28d739f1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3dec3f87]
+14:03:38.108 [main] INFO  o.s.s.quartz.SchedulerFactoryBean:727 - Starting Quartz Scheduler now
+14:03:38.108 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+14:03:38.115 [main] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8078"]
+14:03:38.156 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 8078 (http) with context path ''
+14:03:38.159 [main] INFO  com.ocean.apply.ApplyApplication:61 - Started ApplyApplication in 4.567 seconds (JVM running for 5.414)
+14:05:50.400 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+14:05:50.407 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean:845 - Shutting down Quartz Scheduler
+14:05:50.407 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+14:05:50.407 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+14:05:50.410 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+14:05:50.424 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+14:05:50.425 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+14:05:50.429 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 1. Connection closed
+14:05:50.430 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 1. Connection.close() returned 
+14:05:50.430 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 2. Connection closed
+14:05:50.430 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 2. Connection.close() returned 
+14:05:50.431 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 3. Connection closed
+14:05:50.431 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 3. Connection.close() returned 
+14:05:50.431 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource:1825 - {dataSource-1} closed
+14:06:26.867 [main] INFO  com.ocean.apply.ApplyApplication:55 - Starting ApplyApplication on bogon with PID 23133 (/Users/oceanBin/javaworkself/ocean-code-generator/apply/target/classes started by oceanBin in /Users/oceanBin/javaworkself/ocean-code-generator)
+14:06:26.872 [main] INFO  com.ocean.apply.ApplyApplication:655 - The following profiles are active: dev
+14:06:27.776 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:246 - Multiple Spring Data modules found, entering strict repository configuration mode!
+14:06:27.776 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+14:06:27.794 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate:184 - Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+14:06:28.075 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:06:28.262 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer:92 - Tomcat initialized with port(s): 8078 (http)
+14:06:28.269 [main] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8078"]
+14:06:28.269 [main] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+14:06:28.269 [main] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.27]
+14:06:28.359 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+14:06:28.359 [main] INFO  o.s.web.context.ContextLoader:284 - Root WebApplicationContext: initialization completed in 1395 ms
+14:06:28.417 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+14:06:28.700 [main] INFO  jdbc.connection:541 - 1. Connection opened
+14:06:28.701 [main] INFO  jdbc.audit:175 - 1. Connection.new Connection returned 
+14:06:28.703 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+14:06:28.703 [main] INFO  jdbc.audit:175 - 1. Connection.isClosed() returned false
+14:06:28.707 [main] INFO  jdbc.audit:175 - 1. Statement.new Statement returned 
+14:06:28.707 [main] INFO  jdbc.audit:175 - 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@10c2064a
+14:06:28.709 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+14:06:28.711 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+14:06:28.720 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 9 msec}
+14:06:28.723 [main] INFO  jdbc.resultset:175 - 1. ResultSet.new ResultSet returned 
+14:06:28.723 [main] INFO  jdbc.audit:175 - 1. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@446c3920
+14:06:28.725 [main] INFO  jdbc.resultset:175 - 1. ResultSet.next() returned true
+14:06:28.726 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+14:06:28.726 [main] INFO  jdbc.resultset:175 - 1. ResultSet.close() returned void
+14:06:28.727 [main] INFO  jdbc.audit:175 - 1. Statement.close() returned 
+14:06:28.727 [main] INFO  jdbc.audit:175 - 1. Connection.getAutoCommit() returned true
+14:06:28.727 [main] INFO  jdbc.audit:175 - 1. Connection.getHoldability() returned 2
+14:06:28.729 [main] INFO  jdbc.audit:175 - 1. Connection.isReadOnly() returned false
+14:06:28.731 [main] INFO  jdbc.audit:175 - 1. Connection.getTransactionIsolation() returned 4
+14:06:28.750 [main] INFO  jdbc.connection:541 - 2. Connection opened
+14:06:28.751 [main] INFO  jdbc.audit:175 - 2. Connection.new Connection returned 
+14:06:28.751 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+14:06:28.751 [main] INFO  jdbc.audit:175 - 2. Connection.isClosed() returned false
+14:06:28.751 [main] INFO  jdbc.audit:175 - 2. Statement.new Statement returned 
+14:06:28.751 [main] INFO  jdbc.audit:175 - 2. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@72d0f2b4
+14:06:28.751 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+14:06:28.752 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+14:06:28.754 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 2 msec}
+14:06:28.754 [main] INFO  jdbc.resultset:175 - 2. ResultSet.new ResultSet returned 
+14:06:28.754 [main] INFO  jdbc.audit:175 - 2. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@6d2dc9d2
+14:06:28.754 [main] INFO  jdbc.resultset:175 - 2. ResultSet.next() returned true
+14:06:28.755 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+14:06:28.755 [main] INFO  jdbc.resultset:175 - 2. ResultSet.close() returned void
+14:06:28.755 [main] INFO  jdbc.audit:175 - 2. Statement.close() returned 
+14:06:28.755 [main] INFO  jdbc.audit:175 - 2. Connection.getAutoCommit() returned true
+14:06:28.755 [main] INFO  jdbc.audit:175 - 2. Connection.getHoldability() returned 2
+14:06:28.758 [main] INFO  jdbc.audit:175 - 2. Connection.isReadOnly() returned false
+14:06:28.760 [main] INFO  jdbc.audit:175 - 2. Connection.getTransactionIsolation() returned 4
+14:06:28.779 [main] INFO  jdbc.connection:541 - 3. Connection opened
+14:06:28.780 [main] INFO  jdbc.audit:175 - 3. Connection.new Connection returned 
+14:06:28.780 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:06:28.781 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:06:28.781 [main] INFO  jdbc.audit:175 - 3. Statement.new Statement returned 
+14:06:28.781 [main] INFO  jdbc.audit:175 - 3. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@7e1f584d
+14:06:28.781 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:06:28.782 [main] INFO  jdbc.sqlonly:228 - select 1 
+
+14:06:28.785 [main] INFO  jdbc.sqltiming:373 - select 1 
+ {executed in 3 msec}
+14:06:28.785 [main] INFO  jdbc.resultset:175 - 3. ResultSet.new ResultSet returned 
+14:06:28.786 [main] INFO  jdbc.audit:175 - 3. Statement.executeQuery(select 1) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@7dff6d05
+14:06:28.786 [main] INFO  jdbc.resultset:175 - 3. ResultSet.next() returned true
+14:06:28.786 [main] INFO  jdbc.resultsettable:610 - 
+|--|
+|1 |
+|--|
+|--|
+
+14:06:28.787 [main] INFO  jdbc.resultset:175 - 3. ResultSet.close() returned void
+14:06:28.787 [main] INFO  jdbc.audit:175 - 3. Statement.close() returned 
+14:06:28.787 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:06:28.787 [main] INFO  jdbc.audit:175 - 3. Connection.getHoldability() returned 2
+14:06:28.789 [main] INFO  jdbc.audit:175 - 3. Connection.isReadOnly() returned false
+14:06:28.792 [main] INFO  jdbc.audit:175 - 3. Connection.getTransactionIsolation() returned 4
+14:06:28.795 [main] INFO  c.alibaba.druid.pool.DruidDataSource:930 - {dataSource-1} inited
+14:06:28.868 [main] INFO  o.h.jpa.internal.util.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:06:28.918 [main] INFO  org.hibernate.Version:46 - HHH000412: Hibernate Core {5.4.8.Final}
+14:06:29.020 [main] INFO  o.h.annotations.common.Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+14:06:29.080 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:06:29.080 [main] INFO  jdbc.audit:175 - 3. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@5578be42
+14:06:29.085 [main] INFO  org.hibernate.dialect.Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+14:06:29.113 [main] INFO  jdbc.audit:175 - 3. Connection.clearWarnings() returned 
+14:06:29.113 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:06:29.231 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:06:29.232 [main] INFO  jdbc.audit:175 - 3. Connection.getAutoCommit() returned true
+14:06:29.232 [main] INFO  jdbc.audit:175 - 3. Connection.getMetaData() returned com.mysql.cj.jdbc.DatabaseMetaData@234cff57
+14:06:29.414 [main] INFO  jdbc.audit:175 - 3. Connection.clearWarnings() returned 
+14:06:29.414 [main] INFO  jdbc.audit:175 - 3. Connection.isClosed() returned false
+14:06:29.415 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:06:29.421 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:06:29.615 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+14:06:30.025 [main] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+14:06:30.033 [main] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:06:30.033 [main] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+14:06:30.034 [main] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+14:06:30.034 [main] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+14:06:30.035 [main] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+14:06:30.035 [main] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+14:06:30.035 [main] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@47a4eee2
+14:06:30.102 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration:86 - 
+
+Using generated security password: 8ee6ff74-0f9b-4f4d-9249-ebc838b0f679
+
+14:06:30.191 [main] INFO  o.s.s.web.DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63d677f5, org.springframework.security.web.context.SecurityContextPersistenceFilter@4584304, org.springframework.security.web.header.HeaderWriterFilter@3a4a5f3c, org.springframework.security.web.csrf.CsrfFilter@2b6fb197, org.springframework.security.web.authentication.logout.LogoutFilter@7739aac4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@46468f0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@28b8f98a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@71d55b7e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4645679e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f50d55c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2407a36c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2997ddfc, org.springframework.security.web.session.SessionManagementFilter@586cc15d, org.springframework.security.web.access.ExceptionTranslationFilter@7e3d2ebd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5dbab232]
+14:06:30.237 [main] INFO  o.s.s.quartz.SchedulerFactoryBean:727 - Starting Quartz Scheduler now
+14:06:30.237 [main] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+14:06:30.249 [main] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8078"]
+14:06:30.331 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer:204 - Tomcat started on port(s): 8078 (http) with context path ''
+14:06:30.334 [main] INFO  com.ocean.apply.ApplyApplication:61 - Started ApplyApplication in 3.879 seconds (JVM running for 4.588)
+14:06:34.419 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+14:06:34.420 [SpringContextShutdownHook] INFO  o.s.s.quartz.SchedulerFactoryBean:845 - Shutting down Quartz Scheduler
+14:06:34.420 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+14:06:34.420 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+14:06:34.420 [SpringContextShutdownHook] INFO  org.quartz.core.QuartzScheduler:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+14:06:34.439 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+14:06:34.439 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:598 - Closing JPA EntityManagerFactory for persistence unit 'default'
+14:06:34.444 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 1. Connection closed
+14:06:34.444 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 1. Connection.close() returned 
+14:06:34.444 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 2. Connection closed
+14:06:34.445 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 2. Connection.close() returned 
+14:06:34.445 [SpringContextShutdownHook] INFO  jdbc.connection:568 - 3. Connection closed
+14:06:34.445 [SpringContextShutdownHook] INFO  jdbc.audit:175 - 3. Connection.close() returned 
+14:06:34.445 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource:1825 - {dataSource-1} closed
