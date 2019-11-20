@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 @RequestMapping("/apply")
-public class TestController {
+public class TestApplController {
 
     @GetMapping("/test")
     public String test(){

@@ -15,8 +15,11 @@ import java.util.Optional;
 @Service
 public class GenConfigServiceImpl implements GenConfigService {
 
-    @Autowired
-    private GenConfigRepository genConfigRepository;
+    private final GenConfigRepository genConfigRepository;
+
+    public GenConfigServiceImpl(GenConfigRepository genConfigRepository) {
+        this.genConfigRepository = genConfigRepository;
+    }
 
     @Override
     public GenConfig find() {
