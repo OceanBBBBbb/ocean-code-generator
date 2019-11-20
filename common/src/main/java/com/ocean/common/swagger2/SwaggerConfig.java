@@ -34,21 +34,21 @@ public class SwaggerConfig {
     @Bean
     public Docket createRestApi() {
         ParameterBuilder ticketPar = new ParameterBuilder();
-        List<Parameter> pars = new ArrayList<Parameter>();
-        ticketPar//.name(tokenHeader).description("token")
-                .modelRef(new ModelRef("string"))
-                .parameterType("header")
-                .defaultValue("Bearer ")
-                .required(true)
-                .build();
-        pars.add(ticketPar.build());
+//        List<Parameter> pars = new ArrayList<Parameter>();
+//        ticketPar//.name(tokenHeader).description("token")
+//                .modelRef(new ModelRef("string"))
+//                .parameterType("header")
+//                .defaultValue("Bearer ")
+//                .required(true)
+//                .build();
+//        pars.add(ticketPar.build());
         return new Docket(DocumentationType.SWAGGER_2)
                 .enable(enabled)
                 .apiInfo(apiInfo())
                 .select()
                 .paths(Predicates.not(PathSelectors.regex("/error.*")))
-                .build()
-                .globalOperationParameters(pars);
+                .build();
+//                .globalOperationParameters(pars);
     }
 
     private ApiInfo apiInfo() {
