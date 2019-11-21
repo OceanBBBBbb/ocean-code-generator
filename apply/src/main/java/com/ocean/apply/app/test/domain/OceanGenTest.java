@@ -1,4 +1,4 @@
-package com.ocean.apply.test.domain;
+package com.ocean.apply.app.test.domain;
 
 import lombok.Data;
 import cn.hutool.core.bean.BeanUtil;

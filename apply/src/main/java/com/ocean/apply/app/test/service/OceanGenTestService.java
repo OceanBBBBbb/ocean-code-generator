@@ -1,8 +1,8 @@
-package com.ocean.apply.test.service;
+package com.ocean.apply.app.test.service;
 
-import com.ocean.apply.test.domain.OceanGenTest;
-import com.ocean.apply.test.service.dto.OceanGenTestDTO;
-import com.ocean.apply.test.service.dto.OceanGenTestQueryCriteria;
+import com.ocean.apply.app.test.domain.OceanGenTest;
+import com.ocean.apply.app.test.service.dto.OceanGenTestDTO;
+import com.ocean.apply.app.test.service.dto.OceanGenTestQueryCriteria;
 //import org.springframework.cache.annotation.CacheConfig;
 //import org.springframework.cache.annotation.CacheEvict;
 //import org.springframework.cache.annotation.Cacheable;

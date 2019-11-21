@@ -1,8 +1,8 @@
-package com.ocean.apply.test.service.mapper;
+package com.ocean.apply.app.test.service.mapper;
 
 import com.ocean.common.mapper.EntityMapper;
-import com.ocean.apply.test.domain.OceanGenTest;
-import com.ocean.apply.test.service.dto.OceanGenTestDTO;
+import com.ocean.apply.app.test.domain.OceanGenTest;
+import com.ocean.apply.app.test.service.dto.OceanGenTestDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
 

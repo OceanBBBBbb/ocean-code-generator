@@ -1,12 +1,12 @@
-package com.ocean.apply.test.service.impl;
+package com.ocean.apply.app.test.service.impl;
 
-import com.ocean.apply.test.domain.OceanGenTest;
+import com.ocean.apply.app.test.domain.OceanGenTest;
 import com.ocean.common.utils.ValidationUtil;
-import com.ocean.apply.test.repository.OceanGenTestRepository;
-import com.ocean.apply.test.service.OceanGenTestService;
-import com.ocean.apply.test.service.dto.OceanGenTestDTO;
-import com.ocean.apply.test.service.dto.OceanGenTestQueryCriteria;
-import com.ocean.apply.test.service.mapper.OceanGenTestMapper;
+import com.ocean.apply.app.test.repository.OceanGenTestRepository;
+import com.ocean.apply.app.test.service.OceanGenTestService;
+import com.ocean.apply.app.test.service.dto.OceanGenTestDTO;
+import com.ocean.apply.app.test.service.dto.OceanGenTestQueryCriteria;
+import com.ocean.apply.app.test.service.mapper.OceanGenTestMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;

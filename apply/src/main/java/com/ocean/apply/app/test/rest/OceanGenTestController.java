@@ -1,8 +1,8 @@
-package com.ocean.apply.test.rest;
+package com.ocean.apply.app.test.rest;
 
-import com.ocean.apply.test.domain.OceanGenTest;
-import com.ocean.apply.test.service.OceanGenTestService;
-import com.ocean.apply.test.service.dto.OceanGenTestQueryCriteria;
+import com.ocean.apply.app.test.domain.OceanGenTest;
+import com.ocean.apply.app.test.service.OceanGenTestService;
+import com.ocean.apply.app.test.service.dto.OceanGenTestQueryCriteria;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;

@@ -1,6 +1,6 @@
-package com.ocean.apply.test.repository;
+package com.ocean.apply.app.test.repository;
 
-import com.ocean.apply.test.domain.OceanGenTest;
+import com.ocean.apply.app.test.domain.OceanGenTest;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 

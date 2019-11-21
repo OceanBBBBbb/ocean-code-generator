@@ -1,7 +1,6 @@
-package com.ocean.apply.test.service.dto;
+package com.ocean.apply.app.test.service.dto;
 
 import lombok.Data;
-import com.ocean.common.annotation.Query;
 
 /**
 * @author ocean-genetator
