@@ -8,7 +8,8 @@ ocean-code-generator采用(适用):
 <img src="https://img.shields.io/badge/jpa-orange"/>
 <img src="https://img.shields.io/badge/vue-2.5.17-blueviolet"/>,并使用```maven```构建。
 </br>
-支持自动生成一个业务逻辑增删改查的后端```controller```、```service```、```dao```的代码和前端列表查询和单条数据的增删改查的```vue```代码。
+  支持自动生成一个业务逻辑增删改查的后端```controller```、```service```、```dao```的代码,
+</br>  前端列表查询和单条数据的增删改查的```vue```代码。
 </br>
 这里是后端代码，前端在https://github.com/OceanBBBBbb/ocean-code-generator-fe。
 </br>
@@ -37,11 +38,11 @@ ocean-code-generator采用(适用):
 ######  1.配置生成器
    项目启动时，jpa将会在所连库自动创建```ocean_gen_config```表，这是代码生成配置表。
 需要先配置这个表的信息。注意这里的前端文件生成路径是绝对路径。
-   图1
-
+<img src="https://github.com/OceanBBBBbb/ocean-code-generator/blob/master/apply/src/main/resources/testfiles/oceang1.png"/>
+   
 ######  2.选择生成参数
    然后自定义生成参数，哪些展示，展示为什么名，哪些需要支持精确或模糊查询等等。
-   图2
+<img src="https://github.com/OceanBBBBbb/ocean-code-generator/blob/master/apply/src/main/resources/testfiles/og2.png"/>
    
 ######  3.代码生成
    请求生成代码接口，生成代码。
