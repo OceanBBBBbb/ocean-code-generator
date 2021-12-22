@@ -14,6 +14,7 @@ public interface GeneratorService {
 
     /**
      * 查询数据库元数据
+     *
      * @param name
      * @param startEnd
      * @return
@@ -22,6 +23,7 @@ public interface GeneratorService {
 
     /**
      * 得到数据表的元数据
+     *
      * @param name
      * @return
      */
@@ -29,6 +31,7 @@ public interface GeneratorService {
 
     /**
      * 生成代码
+     *
      * @param columnInfos
      * @param genConfig
      * @param tableName

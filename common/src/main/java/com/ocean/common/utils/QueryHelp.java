@@ -31,7 +31,7 @@ public class QueryHelp {
     public static <R, Q> Predicate getPredicate(Root<R> root, Q query, CriteriaBuilder cb) {
         List<Predicate> list = new ArrayList<>();
 
-        if(query == null){
+        if (query == null) {
             return cb.and(list.toArray(new Predicate[list.size()]));
         }
         try {
@@ -75,35 +75,35 @@ public class QueryHelp {
                     }
                     switch (q.type()) {
                         case EQUAL:
-                            list.add(cb.equal(getExpression(attributeName,join,root)
-                                    .as((Class<? extends Comparable>) fieldType),val));
+                            list.add(cb.equal(getExpression(attributeName, join, root)
+                                    .as((Class<? extends Comparable>) fieldType), val));
                             break;
                         case GREATER_THAN:
-                            list.add(cb.greaterThanOrEqualTo(getExpression(attributeName,join,root)
+                            list.add(cb.greaterThanOrEqualTo(getExpression(attributeName, join, root)
                                     .as((Class<? extends Comparable>) fieldType), (Comparable) val));
                             break;
                         case LESS_THAN:
-                            list.add(cb.lessThanOrEqualTo(getExpression(attributeName,join,root)
+                            list.add(cb.lessThanOrEqualTo(getExpression(attributeName, join, root)
                                     .as((Class<? extends Comparable>) fieldType), (Comparable) val));
                             break;
                         case LESS_THAN_NQ:
-                            list.add(cb.lessThan(getExpression(attributeName,join,root)
+                            list.add(cb.lessThan(getExpression(attributeName, join, root)
                                     .as((Class<? extends Comparable>) fieldType), (Comparable) val));
                             break;
                         case INNER_LIKE:
-                            list.add(cb.like(getExpression(attributeName,join,root)
+                            list.add(cb.like(getExpression(attributeName, join, root)
                                     .as(String.class), "%" + val.toString() + "%"));
                             break;
                         case LEFT_LIKE:
-                            list.add(cb.like(getExpression(attributeName,join,root)
+                            list.add(cb.like(getExpression(attributeName, join, root)
                                     .as(String.class), "%" + val.toString()));
                             break;
                         case RIGHT_LIKE:
-                            list.add(cb.like(getExpression(attributeName,join,root)
+                            list.add(cb.like(getExpression(attributeName, join, root)
                                     .as(String.class), val.toString() + "%"));
                         case IN:
-                            if (CollUtil.isNotEmpty((Collection<Long>)val)) {
-                                list.add(getExpression(attributeName,join,root).in((Collection<Long>) val));
+                            if (CollUtil.isNotEmpty((Collection<Long>) val)) {
+                                list.add(getExpression(attributeName, join, root).in((Collection<Long>) val));
                             }
                             break;
                     }

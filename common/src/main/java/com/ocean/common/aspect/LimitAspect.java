@@ -1,4 +1,5 @@
 package com.ocean.common.aspect;
+
 import com.google.common.collect.ImmutableList;
 import com.ocean.common.annotation.Limit;
 import com.ocean.common.exception.BadRequestException;
@@ -50,7 +51,7 @@ public class LimitAspect {
             }
         }
 
-        ImmutableList keys = ImmutableList.of(StringUtils.join(limit.prefix(), "_", key, "_", request.getRequestURI().replaceAll("/","_")));
+        ImmutableList keys = ImmutableList.of(StringUtils.join(limit.prefix(), "_", key, "_", request.getRequestURI().replaceAll("/", "_")));
 
         String luaScript = buildLuaScript();
         RedisScript<Number> redisScript = new DefaultRedisScript<>(luaScript, Number.class);

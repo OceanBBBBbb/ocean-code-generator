@@ -7,6 +7,7 @@ import javax.persistence.*;
 
 /**
  * 代码生成配置
+ *
  * @author Ocean Bin
  * @date 2019-01-03
  */
@@ -18,31 +19,45 @@ public class GenConfig {
     @Id
     private Long id;
 
-    /** 包路径 **/
-    @Column(columnDefinition=" VARCHAR(120) COMMENT '包路径'")
+    /**
+     * 包路径
+     **/
+    @Column(columnDefinition = " VARCHAR(120) COMMENT '包路径'")
     private String pack;
 
-    /** 模块名 **/
-    @Column(name = "module_name",columnDefinition=" VARCHAR(120) COMMENT '模块名'")
+    /**
+     * 模块名
+     **/
+    @Column(name = "module_name", columnDefinition = " VARCHAR(120) COMMENT '模块名'")
     private String moduleName;
 
-    /** 前端文件路径 **/
-    @Column(columnDefinition=" VARCHAR(120) COMMENT '前端文件路径'")
+    /**
+     * 前端文件路径
+     **/
+    @Column(columnDefinition = " VARCHAR(120) COMMENT '前端文件路径'")
     private String path;
 
-    /** 前端api文件路径 **/
-    @Column(name = "api_path",columnDefinition=" VARCHAR(120) COMMENT '前端api文件路径'")
+    /**
+     * 前端api文件路径
+     **/
+    @Column(name = "api_path", columnDefinition = " VARCHAR(120) COMMENT '前端api文件路径'")
     private String apiPath;
 
-    /** 作者 **/
-    @Column(columnDefinition=" VARCHAR(36) COMMENT '作者'")
+    /**
+     * 作者
+     **/
+    @Column(columnDefinition = " VARCHAR(36) COMMENT '作者'")
     private String author;
 
-    /** 表前缀 **/
-    @Column(columnDefinition=" VARCHAR(24) COMMENT '表前缀'")
+    /**
+     * 表前缀
+     **/
+    @Column(columnDefinition = " VARCHAR(24) COMMENT '表前缀'")
     private String prefix;
 
-    /** 是否覆盖 **/
-    @Column(columnDefinition=" BIT(1) COMMENT '是否覆盖'")
+    /**
+     * 是否覆盖
+     **/
+    @Column(columnDefinition = " BIT(1) COMMENT '是否覆盖'")
     private Boolean cover;
 }

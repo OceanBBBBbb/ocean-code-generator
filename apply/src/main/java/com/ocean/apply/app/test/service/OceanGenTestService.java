@@ -9,31 +9,34 @@ import com.ocean.apply.app.test.service.dto.OceanGenTestQueryCriteria;
 import org.springframework.data.domain.Pageable;
 
 /**
-* @author ocean-genetator
-* @date 2019-11-20
-*/
+ * @author ocean-genetator
+ * @date 2019-11-20
+ */
 //@CacheConfig(cacheNames = "oceanGenTest")
 public interface OceanGenTestService {
 
     /**
-    * queryAll 分页
-    * @param criteria
-    * @param pageable
-    * @return
-    */
+     * queryAll 分页
+     *
+     * @param criteria
+     * @param pageable
+     * @return
+     */
     //@Cacheable(keyGenerator = "keyGenerator")
     Object queryAll(OceanGenTestQueryCriteria criteria, Pageable pageable);
 
     /**
-    * queryAll 不分页
-    * @param criteria
-    * @return
-    */
+     * queryAll 不分页
+     *
+     * @param criteria
+     * @return
+     */
     //@Cacheable(keyGenerator = "keyGenerator")
     public Object queryAll(OceanGenTestQueryCriteria criteria);
 
     /**
      * findById
+     *
      * @param id
      * @return
      */
@@ -42,6 +45,7 @@ public interface OceanGenTestService {
 
     /**
      * create
+     *
      * @param resources
      * @return
      */
@@ -50,6 +54,7 @@ public interface OceanGenTestService {
 
     /**
      * update
+     *
      * @param resources
      */
     //@CacheEvict(allEntries = true)
@@ -57,6 +62,7 @@ public interface OceanGenTestService {
 
     /**
      * delete
+     *
      * @param id
      */
     //@CacheEvict(allEntries = true)

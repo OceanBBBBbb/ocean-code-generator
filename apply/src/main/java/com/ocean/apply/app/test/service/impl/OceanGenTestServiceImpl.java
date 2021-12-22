@@ -11,7 +11,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+
 import java.util.Optional;
+
 import cn.hutool.core.lang.Snowflake;
 import cn.hutool.core.util.IdUtil;
 import org.springframework.data.domain.Page;
@@ -20,9 +22,9 @@ import com.ocean.common.utils.PageUtil;
 import com.ocean.common.utils.QueryHelp;
 
 /**
-* @author ocean-genetator
-* @date 2019-11-20
-*/
+ * @author ocean-genetator
+ * @date 2019-11-20
+ */
 @Service
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
 public class OceanGenTestServiceImpl implements OceanGenTestService {
@@ -34,20 +36,20 @@ public class OceanGenTestServiceImpl implements OceanGenTestService {
     private OceanGenTestMapper oceanGenTestMapper;
 
     @Override
-    public Object queryAll(OceanGenTestQueryCriteria criteria, Pageable pageable){
-        Page<OceanGenTest> page = oceanGenTestRepository.findAll((root, criteriaQuery, criteriaBuilder) -> QueryHelp.getPredicate(root,criteria,criteriaBuilder),pageable);
+    public Object queryAll(OceanGenTestQueryCriteria criteria, Pageable pageable) {
+        Page<OceanGenTest> page = oceanGenTestRepository.findAll((root, criteriaQuery, criteriaBuilder) -> QueryHelp.getPredicate(root, criteria, criteriaBuilder), pageable);
         return PageUtil.toPage(page.map(oceanGenTestMapper::toDto));
     }
 
     @Override
-    public Object queryAll(OceanGenTestQueryCriteria criteria){
-        return oceanGenTestMapper.toDto(oceanGenTestRepository.findAll((root, criteriaQuery, criteriaBuilder) -> QueryHelp.getPredicate(root,criteria,criteriaBuilder)));
+    public Object queryAll(OceanGenTestQueryCriteria criteria) {
+        return oceanGenTestMapper.toDto(oceanGenTestRepository.findAll((root, criteriaQuery, criteriaBuilder) -> QueryHelp.getPredicate(root, criteria, criteriaBuilder)));
     }
 
     @Override
     public OceanGenTestDTO findById(Long id) {
         Optional<OceanGenTest> oceanGenTest = oceanGenTestRepository.findById(id);
-        ValidationUtil.isNull(oceanGenTest,"OceanGenTest","id",id);
+        ValidationUtil.isNull(oceanGenTest, "OceanGenTest", "id", id);
         return oceanGenTestMapper.toDto(oceanGenTest.get());
     }
 
@@ -55,7 +57,7 @@ public class OceanGenTestServiceImpl implements OceanGenTestService {
     @Transactional(rollbackFor = Exception.class)
     public OceanGenTestDTO create(OceanGenTest resources) {
         Snowflake snowflake = IdUtil.createSnowflake(1, 1);
-        resources.setId(snowflake.nextId()); 
+        resources.setId(snowflake.nextId());
         return oceanGenTestMapper.toDto(oceanGenTestRepository.save(resources));
     }
 
@@ -63,7 +65,7 @@ public class OceanGenTestServiceImpl implements OceanGenTestService {
     @Transactional(rollbackFor = Exception.class)
     public void update(OceanGenTest resources) {
         Optional<OceanGenTest> optionalOceanGenTest = oceanGenTestRepository.findById(resources.getId());
-        ValidationUtil.isNull( optionalOceanGenTest,"OceanGenTest","id",resources.getId());
+        ValidationUtil.isNull(optionalOceanGenTest, "OceanGenTest", "id", resources.getId());
         OceanGenTest oceanGenTest = optionalOceanGenTest.get();
         oceanGenTest.copy(resources);
         oceanGenTestRepository.save(oceanGenTest);

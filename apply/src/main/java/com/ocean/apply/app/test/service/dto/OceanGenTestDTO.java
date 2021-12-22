@@ -1,20 +1,22 @@
 package com.ocean.apply.app.test.service.dto;
 
 import lombok.Data;
+
 import java.io.Serializable;
+
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 
 
 /**
-* @author ocean-genetator
-* @date 2019-11-20
-*/
+ * @author ocean-genetator
+ * @date 2019-11-20
+ */
 @Data
 public class OceanGenTestDTO implements Serializable {
 
     // 处理精度丢失问题
-    @JsonSerialize(using= ToStringSerializer.class)
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long id;
 
     // 前端api文件路径

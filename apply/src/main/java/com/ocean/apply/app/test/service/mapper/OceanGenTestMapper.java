@@ -7,10 +7,10 @@ import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
 
 /**
-* @author ocean-genetator
-* @date 2019-11-20
-*/
-@Mapper(componentModel = "spring",uses = {},unmappedTargetPolicy = ReportingPolicy.IGNORE)
+ * @author ocean-genetator
+ * @date 2019-11-20
+ */
+@Mapper(componentModel = "spring", uses = {}, unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface OceanGenTestMapper extends EntityMapper<OceanGenTestDTO, OceanGenTest> {
 
 }

@@ -3,16 +3,17 @@ package com.ocean.apply.app.test.domain;
 import lombok.Data;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 /**
-* @author ocean-genetator
-* @date 2019-11-20
-*/
+ * @author ocean-genetator
+ * @date 2019-11-20
+ */
 @Entity
 @Data
-@Table(name="ocean_gen_test")
+@Table(name = "ocean_gen_test")
 public class OceanGenTest implements Serializable {
 
     @Id
@@ -47,7 +48,7 @@ public class OceanGenTest implements Serializable {
     @Column(name = "prefix")
     private String prefix;
 
-    public void copy(OceanGenTest source){
-        BeanUtil.copyProperties(source,this, CopyOptions.create().setIgnoreNullValue(true));
+    public void copy(OceanGenTest source) {
+        BeanUtil.copyProperties(source, this, CopyOptions.create().setIgnoreNullValue(true));
     }
 }

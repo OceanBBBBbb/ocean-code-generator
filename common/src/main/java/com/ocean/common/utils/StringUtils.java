@@ -125,26 +125,28 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
 
     /**
      * 获取ip地址
+     *
      * @param request
      * @return
      */
-        public static String getIP(HttpServletRequest request) {
+    public static String getIP(HttpServletRequest request) {
         String ip = request.getHeader("x-forwarded-for");
-        if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getHeader("Proxy-Client-IP");
         }
-        if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getHeader("WL-Proxy-Client-IP");
         }
-        if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+        if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getRemoteAddr();
         }
         String[] ips = ip.split(",");
-        return "0:0:0:0:0:0:0:1".equals(ips[0])?"127.0.0.1":ips[0];
+        return "0:0:0:0:0:0:0:1".equals(ips[0]) ? "127.0.0.1" : ips[0];
     }
 
     /**
      * 根据ip获取详细地址
+     *
      * @param ip
      * @return
      */
@@ -173,11 +175,11 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
             }
             DataBlock dataBlock = null;
             dataBlock = (DataBlock) method.invoke(searcher, ip);
-            String address = dataBlock.getRegion().replace("0|","");
-            if(address.charAt(address.length()-1) == '|'){
-                address = address.substring(0,address.length() - 1);
+            String address = dataBlock.getRegion().replace("0|", "");
+            if (address.charAt(address.length() - 1) == '|') {
+                address = address.substring(0, address.length() - 1);
             }
-            return address.equals(REGION)?"内网IP":address;
+            return address.equals(REGION) ? "内网IP" : address;
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -187,13 +189,13 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
     /**
      * 获得当天是周几
      */
-    public static String getWeekDay(){
+    public static String getWeekDay() {
         String[] weekDays = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
         Calendar cal = Calendar.getInstance();
         cal.setTime(new Date());
 
         int w = cal.get(Calendar.DAY_OF_WEEK) - 1;
-        if (w < 0){
+        if (w < 0) {
             w = 0;
         }
         return weekDays[w];
