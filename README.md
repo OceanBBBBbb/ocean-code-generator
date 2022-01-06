@@ -11,7 +11,7 @@ ocean-code-generator采用(适用):
   支持自动生成一个业务逻辑增删改查的后端```controller```、```service```、```dao```的代码,
 </br>  前端列表查询和单条数据的增删改查的```vue```代码。
 </br>
-这里是后端代码，前端在https://github.com/OceanBBBBbb/ocean-code-generator-fe。
+这里是后端代码，前端在https://github.com/OceanBBBBbb/ocean-code-generator-fe
 </br>
 如果你不会前端，也可以通过swagger实现整个流程！
 
